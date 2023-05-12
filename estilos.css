@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #1f2937;
     margin: 0;
@@ -16,7 +19,7 @@ header ul{
     align-items: center;
     font-size: large;
     gap: 2.3rem;
-    height: 2.4rem;
+    height: 2.5rem;
     margin: 0;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -24,10 +27,18 @@ header ul{
     -webkit-backdrop-filter: blur(4.7px);
     border: 1px solid rgba(255, 255, 255, 0.24);   
 }
-header li{
-    border-bottom: 0.3px solid #b9b9b9;
+header li a{
+    color: #b9b9b9;
+    padding: 0.14rem 0;
+    text-decoration: none;
+    border-bottom: 1.6px solid transparent;
 }
-.home{
+header li a:hover{
+    cursor: pointer;
+    color: #ffe2ad;
+    border-color: #ffe2ad;
+}
+#home{
     height: 47.2rem;
     display: flex;
     flex-direction: column;
@@ -36,39 +47,40 @@ header li{
     gap: 1.4rem;
     
 }
-.home p{
+#home p{
     color: #9e9e9e;
     font-size: 2.4rem;
     margin: 0;
 }
-.home h1{
+#home h1{
     color: #fff;
     font-size: 7rem;
     margin: 0;
     /* background-color: #4C5666; */
 }
-.home h3{
+#home h3{
     font-size: 2.3rem;
     color: #FFEDCB;
     /* color:#9e9e9e; */
     margin: 0;
 }
-.home div{ 
+#home div{ 
     height: 2rem;
 }
-.sobreMi{
-    min-height: 47.25rem;
+#sobreMi{
+    min-height: 47.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #374151;
     padding: 3rem ;
+    gap: 1.5rem;
 }
-.sobreMi h2{
+#sobreMi h2{
     font-size: 6rem;
     color: #ffe2ad;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 .list-button{
     padding-left: 0;
@@ -82,7 +94,15 @@ header li{
     padding: 0.6rem 1rem;
     border-radius: 10px;
 }
-.sobreMi div{
+.list-button li{
+    border-bottom: 2px solid transparent;
+}
+.list-button li:hover{
+    cursor: pointer;
+    color: #ffe2ad;
+    border-bottom: 2px solid #ffe2ad;
+}
+.contenedor{
     width: 40rem;
     background-color:#1f2937;
     min-height: 9rem;
@@ -128,4 +148,35 @@ header li{
     background: linear-gradient(180deg, #1f2937, #374151);
     height: 5rem;
     
+}
+.separacion{
+    background: linear-gradient(180deg, #374151,#1f2937);
+    height: 5rem;
+}
+#proyectos{
+    min-height: 47.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem ;
+}
+#proyectos h2{
+    font-size: 6rem;
+    color: #ffe2ad;
+    margin: 2rem auto;
+}
+.proyecto{
+    display: flex;
+    justify-content: center;
+    min-height: 25rem;
+    width: 98%;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.proyecto div{
+    background-color: #9e9e9e;
+    width: 48%;
+    height: 20rem;
 }
