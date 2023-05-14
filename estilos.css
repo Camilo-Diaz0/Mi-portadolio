@@ -38,13 +38,17 @@ header li a:hover{
     color: #ffe2ad;
     border-color: #ffe2ad;
 }
+.seleccionado{
+    color: #ffe2ad;
+    border-color: #ffe2ad;
+}
 #home{
     height: 47.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 1.4rem;
+    gap: 1.6rem;
     
 }
 #home p{
@@ -56,33 +60,43 @@ header li a:hover{
     color: #fff;
     font-size: 7rem;
     margin: 0;
-    /* background-color: #4C5666; */
 }
 #home h3{
     font-size: 2.3rem;
     color: #FFEDCB;
-    /* color:#9e9e9e; */
     margin: 0;
 }
 #home div{ 
     height: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+}
+#home div svg{
+    height: 2rem;
+    fill: #9e9e9e;
+}
+#home div svg:hover{
+    fill: #fff;
+    scale: 0.9;
 }
 #sobreMi{
     min-height: 47.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start  ;
     background-color: #374151;
-    padding: 3rem ;
+    padding: 4rem ;
     gap: 1.5rem;
 }
 #sobreMi h2{
     font-size: 6rem;
     color: #ffe2ad;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
-.list-button{
+.list-sobreMi{
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -94,10 +108,10 @@ header li a:hover{
     padding: 0.6rem 1rem;
     border-radius: 10px;
 }
-.list-button li{
+li{
     border-bottom: 2px solid transparent;
 }
-.list-button li:hover{
+.list-sobreMi li:hover{
     cursor: pointer;
     color: #ffe2ad;
     border-bottom: 2px solid #ffe2ad;
@@ -116,13 +130,14 @@ header li a:hover{
     display: flex;
     text-align:start;
     align-items:center ;  
-    /* display: none; */
+    
 }
 .estudios-content{
     font-size: 1.2rem;
     list-style-type: none;
     padding-left: 0;
     color: #FFEDCB;
+    flex-direction: column;
     display: none;
 }
 .estudios-content p{
@@ -139,6 +154,7 @@ header li a:hover{
     list-style: none;
     text-align: center;
     padding-left: 0;
+    flex-direction: column;
     display: none;
 }
 .skills-content li{
@@ -179,4 +195,7 @@ header li a:hover{
     background-color: #9e9e9e;
     width: 48%;
     height: 20rem;
+}
+.proyecto div img{
+    height: 90%;
 }
