@@ -4,6 +4,7 @@ html{
 body{
     background-color: #1f2937;
     margin: 0;
+    text-shadow: 2px 4px 10px #000;
 }
 
 header ul{
@@ -94,6 +95,7 @@ header li a:hover{
 #sobreMi h2{
     font-size: 6rem;
     color: #ffe2ad;
+
     margin: 1.5rem auto;
 }
 .list-sobreMi{
@@ -128,20 +130,25 @@ li{
 }
 .perfil-content{
     display: flex;
-    text-align:center;
     align-items:center ;  
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
 }
 .perfil-content a{
-    background-color: #b9b9b9;
-    color:#1f2937;
-    font-size: 1.2rem;
+    color:#ffe2ad;
+    border: 1.3px solid #ffe2ad;
+    font-size: 1.3rem;
     text-decoration: none;
-    padding: 0.8rem 0.5rem;
-    border-radius: 1rem;
+    padding: 0.8rem;
+    border-radius: 1.6rem;
     margin-bottom: 0.8rem;
+}
+.perfil-content a:hover{
+    cursor: pointer;
+    background-color: #ffe2adc5;
+    color: #1f2937;
+    transition: 0.6s;
 }
 .estudios-content{
     font-size: 1.2rem;
@@ -183,12 +190,12 @@ li{
 .skills-content li img{
     height: 3.2rem;
 }
-.figura{
+.separacion1{
     background: linear-gradient(180deg, #1f2937, #374151);
     height: 5rem;
     
-}
-.separacion{
+} 
+.separacion2{
     background: linear-gradient(180deg, #374151,#1f2937);
     height: 5rem;
 }
@@ -222,29 +229,107 @@ li{
     justify-content: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 2px 6px 2.3rem #000;
+    box-shadow: 3px 8px 2.6rem #000;
     border-radius: 0.7rem;
+    background-color: #374151;
 }
-.proyecto-item img{
+.adelante{
     height: 100%;
     width: 100%;
     backface-visibility:hidden;
     transition: 0.5s;
 }
-.proyecto-item:hover img{
+.proyecto-item:hover .adelante{
     transform: perspective(34.5rem) rotateY(180deg);
     cursor: pointer;
 }
 .atras{
     transform: perspective(34.5rem) rotateY(180deg);
     backface-visibility: hidden;
-    background-color: #374151;
+    background-color: #9e9e9e;
     position: absolute;
     height: 100%;
     width: 100%;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
 }
 .proyecto-item:hover .atras{
     transform: perspective(34.5rem) rotateY(360deg);
     cursor: pointer;
+}
+.atras h3{
+    font-size: 2rem;
+    margin: 0.7rem 0;
+    color: #fff;
+}
+.atras ul{
+    padding-left: 0;
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.8rem;
+    height: 4.5rem;
+    margin: 0.5rem 1.5rem;
+}
+.atras ul img{
+    height: 2.2rem;
+}
+.atras li{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.atras a{
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+    border:0.3rem solid #1f2937;
+    height: 1.3rem;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    margin: 0.6rem;
+    display:inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.atras a:hover{
+    background-color: #1f2937;
+    transition: 0.8s;
+}
+footer{
+    margin-bottom: 0.5rem;
+    border-top: 1.5px solid #9e9e9e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
+}
+footer ul svg{
+    height: 2rem;
+    fill: #9e9e9e;
+}
+footer ul svg:hover{
+    fill: #fff;
+    scale: 0.9;
+}
+footer div{
+    color:#b9b9b9;
+}
+footer a{
+    color: #fff;
+    margin-left: 3px;
 }
