@@ -95,8 +95,7 @@ header li a:hover{
 #sobreMi h2{
     font-size: 6rem;
     color: #ffe2ad;
-
-    margin: 1.5rem auto;
+    margin: 0.8rem auto;
 }
 .list-sobreMi{
     padding-left: 0;
@@ -330,6 +329,9 @@ footer div{
     color:#b9b9b9;
 }
 footer a{
-    color: #fff;
+    color:#b9b9b9;
     margin-left: 3px;
+}
+footer a:hover{
+    color: #fff;
 }
