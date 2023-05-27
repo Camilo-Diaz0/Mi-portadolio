@@ -23,16 +23,8 @@ const colorMenu = (a,lista,tipo)=>{
         let aMenu = i.firstChild;
         if(tipo === 1) aMenu = i;
         if(a === aMenu){
-            // aMenu.style = `
-            //     color: #ffe2ad;
-            //     border-color: #ffe2ad;        
-            // `;
             aMenu.classList.add("seleccionado");
         }else{
-            // aMenu.style = `
-            //     color: #b9b9b9;
-            //     border-color: transparent;        
-            // `;
             aMenu.classList.remove("seleccionado")
         }
     }
