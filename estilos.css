@@ -6,7 +6,12 @@ body{
     margin: 0;
     text-shadow: 2px 4px 10px #000;
 }
-
+header svg{
+    width: 3rem;
+    height: 3rem;
+    fill:#d1d1d1;
+    display: none;
+}
 header ul{
     position: fixed;
     top: 0;
@@ -334,4 +339,125 @@ footer a{
 }
 footer a:hover{
     color: #fff;
+}
+
+@media screen and (max-width:1060px){
+    .proyecto{
+        gap: 2.5rem;
+    }
+    .proyecto-item{
+        width: 90%;
+        height: 45rem;
+        flex-direction: column;  
+        border-radius: 0;
+    }
+    .adelante{
+        height: 49%;
+        width: 95%;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .atras{
+        height: 49%;
+        position: relative;
+        transform: none;
+        background-color: #374151;
+    }
+    .proyecto-item:hover .adelante, .proyecto-item:hover .atras{
+        transform: none;
+        cursor:default;
+    }
+    .atras a{
+        border:solid 2.5px #FFEDCB;
+        color: #FFEDCB;
+    }
+    .atras a:hover{
+        background-color: #FFEDCB;
+        color: #374151;
+    }
+    .contenedor{
+        width:90%;
+    }
+}
+@media screen and (max-width:650px) {
+    body{
+        width: 100%;
+    }
+    header{
+        height: 4rem;
+    }
+    header svg{
+        display: flex;
+        right: 0;
+        margin:0.5rem;
+    }
+    .icon-menu{
+        position: fixed;
+    }
+    header svg:hover{
+        cursor: pointer;
+        fill: #fff;
+    }
+    header ul{
+        display: none;
+        font-size: 1.8rem;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: #7a7a7a;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    header ul svg{
+        position: absolute;
+        top: 0;
+    }
+    #home, #sobreMi, #proyectos{
+        width: 100%;
+        min-height: 54rem;
+        padding: 0;
+    }
+    #home p, #home h3{
+        font-size: 1.8rem;
+    }
+    #home h1{
+        font-size: 6rem;
+    }
+    #sobreMi h2{
+        font-size: 4.5rem;
+    }
+    .list-sobreMi {
+        font-size: 1.5rem;
+    }
+    .contenedor{
+        padding: 0.8rem;
+        font-size: 1rem;
+        min-height: 22rem;
+    }
+    .perfil-content{
+        gap: 1.6rem;
+    }
+    .perfil-content div{
+        margin-top: 1.4rem;
+    }
+    #proyectos h2{
+        font-size: 4.5rem;
+    }
+    .atras{
+        gap:1rem;
+    }
+    .atras ul{
+        height: 30%;
+        row-gap: 0.2rem;
+        margin: 0.6rem auto;
+    }
+    .atras li{
+        font-size: 1rem;
+    }
+    /* .proyecto-item{
+        height: 40rem;
+    } */
+    .proyecto-item img{
+        object-fit: cover;
+    }
 }
