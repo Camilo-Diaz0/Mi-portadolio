@@ -1,5 +1,5 @@
- const menu =document.querySelectorAll(".menu li")
-
+const menu =document.querySelectorAll(".menu li");
+const ulMenu = document.querySelector(".menu");
  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry =>{
         const id = entry.target.getAttribute("id");
@@ -9,9 +9,20 @@
         }    
     });
 },{rootMargin: "-50% 0px -50% 0px"});
+document.querySelector(".icon-menu").addEventListener("click", () =>{
+    ulMenu.classList.add("open-menu");
+});
+
+document.querySelector(".close-menu").addEventListener("click", () =>{
+    ulMenu.classList.remove("open-menu");
+});
 
 menu.forEach(li =>{
     li.addEventListener("click", x =>{
+        if(ulMenu.classList[1] === "open-menu"){
+            ulMenu.classList.remove("open-menu");
+            console.log("prueba")
+        }
         colorMenu(li.firstChild,menu);
     })
     const hash = li.firstChild.getAttribute("href");
