@@ -428,12 +428,19 @@ footer a:hover{
         min-height: 54rem;
         padding: 0;
     }
-    #home p, #home h3{
+    #home{
+        position: relative;
+        top: -4rem;
+    }
+    #home p{
         font-size: 1.8rem;
     }
     #home h1{
         font-size: 6rem;
        padding: 0 0.6rem;
+    }
+    #home h3{
+        font-size: 1.6rem;
     }
     #sobreMi h2{
         font-size: 4.5rem;
@@ -464,7 +471,7 @@ footer a:hover{
     .atras ul{
         height: 30%;
         row-gap: 0.2rem;
-        margin: 0.6rem auto;
+        margin: 0.6rem;
     }
     .atras li{
         font-size: 1rem;
@@ -474,5 +481,10 @@ footer a:hover{
     }
     .proyecto-item img{
         object-fit: cover;
+    }
+    footer{
+        flex-direction: column-reverse;
+        padding: 1.4rem 0;
+        margin-bottom: 0;
     }
 }
